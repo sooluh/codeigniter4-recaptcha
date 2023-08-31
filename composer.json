@@ -1,0 +1,46 @@
+{
+    "name": "sooluh/codeigniter4-recaptcha",
+    "type": "library",
+    "description": "CodeIgniter 4 verifier for Google reCAPTCHA v2 and reCAPTCHA v3",
+    "version": "0.0.2",
+    "keywords": [
+        "google",
+        "recaptcha"
+    ],
+    "homepage": "https://github.com/sooluh/codeigniter4-recaptcha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abu Masyail",
+            "email": "suluhs@aol.com",
+            "homepage": "https://suluh.my.id",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "source": "http://github.com/sooluh/codeigniter4-recaptcha",
+        "docs": "https://github.com/sooluh/codeigniter4-recaptcha/blob/master/README.md",
+        "issues": "https://github.com/sooluh/codeigniter4-recaptcha/issues"
+    },
+    "scripts": {
+        "psr2check": [
+            "@php vendor/bin/phpcs --standard=PSR2 --ignore=vendor/*,Views/* ."
+        ],
+        "psr2autofix": [
+            "@php vendor/bin/phpcbf --standard=PSR2 --ignore=vendor/*,Views/* ."
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "ReCaptcha\\": ""
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "codeigniter4/framework": "^4",
+        "google/recaptcha": "^1.2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7"
+    }
+}
